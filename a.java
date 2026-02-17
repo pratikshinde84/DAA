@@ -30,7 +30,6 @@ public class a {
 
     public static void main(String[] args) {
         // System.out.println(new a().findMin(new int[]{4,5,6,7,0,1,2}));
-        System.out.println(new aa().findKRotation(new int[]{5,1,2,3,4}));
-        
+        System.out.println(new a().findKRotation(new int[]{5,1,2,3,4}));
     }
 }
