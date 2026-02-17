@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="textForm">
+        <input type="text" id="inputText" placeholder="Enter text here" required>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <input type="text" id="outputText" placeholder="Output will be displayed here" readonly>
+    <script>
+        document.getElementById('textForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var inputText = document.getElementById('inputText').value;
+            document.getElementById('outputText').value = inputText;
+        });
+    </script>
+
+</body>
+</html>
